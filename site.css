@@ -1,0 +1,457 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black !important;
+}
+
+
+/* 
+aside header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-area: header;
+} */
+
+main {
+  margin-left: 15px ;
+  margin-bottom: 15px;
+}
+
+main p {
+  color: #fff;
+}
+
+.row{
+  padding: 1%;
+}
+
+.skillTable {
+  margin-top: 2%;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.skillTable .row{
+  margin-top: 2%;
+  background-color: rgb(87 87 87 / 25%);
+  border-radius: 10px;
+}
+
+.skillTable .col-sm ul{
+  margin-top: 2%;
+  font-size: 20px;
+  list-style: none;
+}
+
+
+.skillsBar .progress {
+  margin-bottom: 10px;
+  height: 5px;
+}
+
+.skillsBar h5{
+  color: #fff;
+}
+
+aside header #menu {
+  margin-left: auto;
+}
+
+/* header #headshot, header #siteName, header #menu {
+  display: inline;
+  vertical-align: middle;
+} */
+
+.container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#formInfo {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.intro .aboutme img{
+  width: 30%;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.aboutme img{
+  width: 20%;
+  border-radius: 50%;
+}
+.skillsBar {
+  margin-right: 20px;
+}
+
+.skillsBar h3{
+  color: #fff;
+}
+
+.dropdown .dropdown-menu a:hover{
+  background-color: #333333;
+}
+
+.modal-content .modal-header{
+  border-bottom: none;
+}
+
+.modal-content .modal-footer{
+  border-top: none;
+}
+
+.modal-body p{
+  color: black;
+}
+
+.modal-body img {
+  width: 100%;
+}
+
+.intro h5{
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px){
+  #headshot {
+    display: none;
+  }
+  .intro h1{
+    font-size: 2em;
+  }
+  .intro p{
+    font-size: 1em;
+  }
+  .animateBox {
+    display: none;
+  }
+  main p {
+    line-height: 1.5rem;
+  }
+  .ForMobile {
+    display: block;
+  }
+  .ForWeb {
+    display: none;
+  }
+  .skillTable .col-sm ul{
+    font-size: 15px;
+  }
+  
+  .dropdown .dropdown-menu {
+    background-color: #989898;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  aside .navbar-expand-lg .container-fluid .navbar-nav {
+    flex-direction: column;
+  }
+  .carousel.slide{
+    width: 70%;
+  }
+  
+  aside {
+    position: fixed;
+    left: 0%;
+    height: 100%;
+  }
+  
+  .dropdown .dropdown-menu {
+    background-color: black;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "aside main "
+      "footer footer";
+    grid-template-columns: 15% auto;
+    grid-gap: 8px;
+    margin: 0px !important;
+  }
+  main {
+    padding: 4px;
+    color: #202020;
+    grid-area: main;
+  }
+  
+  main p {
+    color: #fff;
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+  
+  aside {
+    grid-area: aside;
+    max-width: min-content;
+    background-color: black;
+  }
+  
+  .intro {
+    max-width: 65%;
+  }
+
+  h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #headshot {
+    padding: 2px;
+    margin: 8px;
+    max-width: 100%;
+  }
+  
+  
+  .experience {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222; 
+  }
+  
+  .experience .title {
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #202020;
+    color: lightblue;
+    text-align: center;
+    padding: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    grid-area: footer;
+  }
+  
+  #menu li {
+    display: block;
+    padding: 8px;
+  }
+  
+  #menu li a {
+    color: white !important;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+  }
+
+  #menu li a {
+    color: white !important;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+  }
+  
+  #menu li.active {
+    background-color: darkslateblue;
+  }
+
+  .intro h1{
+    font-size: 3em;
+  }
+
+  .ForMobile {
+    display: none;
+  }
+  .ForWeb {
+    display: block;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&family=Montserrat:wght@100&family=Nunito:wght@200;500&display=swap');
+.intro {
+  margin-top: 3%;
+  overflow: overlay   ;
+}
+button a{
+  text-decoration: none;
+  color: #fff;
+}
+button a:hover{
+  text-decoration: none;
+  color: black;
+}
+.intro h1{
+  color: #ddd;
+  font-family: 'Merriweather Sans', sans-serif;
+  overflow: hidden;
+  width: 100%;
+  animation: animtext 1s steps(80, end); 
+  transition: all cubic-bezier(0.15, 1.93, 1, 1.32);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.intro p{
+  margin-bottom: 30px;
+}
+
+@keyframes animtext { 
+  from {
+    width: 0;
+    transition: all 2s ease-in-out;
+  } 
+}
+
+.animateBox {
+  float: right;
+}
+
+.animateBox .sample {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: aqua;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {right:200px; top:150px;}
+  50%  {left:250px; top:250px;}
+  75%  {right:250px; top:350px;}
+  100% {left:15px; top:15px;}
+}
+
+.animateBox .sample2 {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(43, 255, 0);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes example2 {
+  0%   {left:0px; top:150px;}
+  25%  {left:150px; top:200px;}
+  50%  {right:250px; top:200px;}
+  75%  {left:250px; top:400px;}
+  100% {left:0px; top:450px;}
+}
+
+.animateBox .sample3 {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(242, 255, 0);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes example3 {
+  0%   {right:0px; top:200px;}
+  25%  {right:0px; top:250px;}
+  50%  {right:15px; top:15px;}
+  75%  {right:0px; top:0px;}
+  100% {right:0px; top:0px;}
+}
+
+.animateBox .sample4 {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(255, 157, 0);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes example4 {
+  0%   {left:0px; top:300px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:15px; top:15px;}
+  100% {left:150px; top:0px;}
+}
+
+.animateBox .sample5 {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  animation-name: example5;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(255, 0, 136);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes example5 {
+  0%   {left:0px; top:150px;}
+  25%  {left:0px; top:0px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:0px; top:0px;}
+  100% {left:15px; top:15px;}
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
